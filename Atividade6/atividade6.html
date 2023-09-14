@@ -1,0 +1,82 @@
+<html>
+<head>
+<style>
+div {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+@media (min-width: 20px) and (max-width: 500px) {
+  div {
+    background-color: rgb(107, 104, 104);
+  }
+
+  h1::before {
+    content: "Cinza";
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  div {
+    background-color: yellow;
+  }
+
+  h1::before {
+    content: "Amarelo";
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  div {
+    background-color: rgb(217, 0, 255);
+  }
+
+  h1::before {
+    content: "Rosa";
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1079px) {
+  div {
+    background-color: rgb(255, 0, 0);
+  }
+
+  h1::before {
+    content: "Vermelho";
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1365px) {
+  div {
+    background-color: rgb(0, 8, 255);
+  }
+
+  h1::before {
+    content: "Azul";
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  div {
+    background-color: rgb(43, 255, 0);
+  }
+
+  h1::before {
+    content: "Verde";
+  }
+}
+</style>
+</head>
+<body>
+<div>
+<h1></h1>
+</div>
+</body>
+</html>
