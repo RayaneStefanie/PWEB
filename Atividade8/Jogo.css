@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    margin: 5px;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
