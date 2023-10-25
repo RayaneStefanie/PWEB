@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <style>
+        #janela {
+            width: 500px;
+            height: 500px;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Função para mudar a imagem e o texto da janela
+        function mudarJanela(imagem, texto) {
+            document.getElementById("janela").src = imagem;
+            document.getElementById("titulo").innerHTML = texto;
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="titulo">Abra a janela</h1>
+    <img id="janela" src="janela-fechada.jpg" 
+        onmouseover="mudarJanela('janela-aberta.jfif', 'Janela aberta')"
+        onmouseout="mudarJanela('janela-fechada.jfif', 'Janela fechada')"
+        onclick="mudarJanela('janela-quebrada.jfif', 'Janela quebrada')" />
+</body>
+
+</html>
