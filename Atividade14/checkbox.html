@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <script>
+        function transformText() {
+            var inputText = document.getElementById("inputText");
+            var upperCase = document.getElementById("upperCase");
+            var lowerCase = document.getElementById("lowerCase");
+            if (upperCase.checked) {
+                inputText.value = inputText.value.toUpperCase();
+            }
+            if (lowerCase.checked) {
+                inputText.value = inputText.value.toLowerCase();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="text" id="inputText" value="Digite algo aqui">
+        </div>
+        <div>
+            <input type="checkbox" id="upperCase" onclick="transformText()">
+            <label for="upperCase">Transformar em letras maiúsculas</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lowerCase" onclick="transformText()">
+            <label for="lowerCase">Transformar em letras minúsculas</label>
+        </div>
+    </form>
+</body>
+
+</html>
